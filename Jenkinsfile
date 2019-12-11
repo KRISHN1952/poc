@@ -8,7 +8,7 @@ node{
       withCredentials([string(credentialsId: 'DOCKER_HUB_CREDENTIALS', variable: 'DOCKER_HUB_CREDENTIALS')]) {
         sh 'docker login -u krishna1952 -p ${DOCKER_HUB_CREDENTIALS}'
       }
-        sh "docker build -t krishna1952/cloudedgepoc-2:latest ."
+        sh "docker build -t krishna1952/cloudedgepoc-2:1.0 ."
     }
     
     stage('Push Docker Image'){
