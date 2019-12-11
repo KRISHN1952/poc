@@ -35,6 +35,7 @@ spec:
       containers:
       - name: nginx-deployment
         image: krishna1952/cloudedgepoc-2
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
        
