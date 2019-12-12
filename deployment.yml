@@ -33,7 +33,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx-deployment
+      - name: nginx
         image: krishna1952/cloudedgepoc-2
         ports:
         - containerPort: 80
